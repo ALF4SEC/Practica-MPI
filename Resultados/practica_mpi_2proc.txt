@@ -1,0 +1,36 @@
+
+=== PROCESO 0 (E/S) en alfasec ===
+Mensaje original  : HABIENDO LLEGADO AL FINAL DE MI VIDA DE POBRE PECADOR, CON EL PELO YA CANOSO, ME DISPONGO A DEJAR CONSTANCIA SOBRE ESTE PERGAMINO DE LOS HECHOS ASOMBROSOS Y TERRIBLES QUE ME FUE DADO PRESENCIAR EN MI JUVENTUD, HACIA FINALES DEL ANHO DEL SENHOR DE 1327. QUE DIOS ME CONCEDA SABIDURIA Y GRACIA PARA SER FIEL NARRADOR DE LOS SUCESOS QUE TUVIERON LUGAR EN UNA REMOTA ABADIA EN EL RECONDITO NORTE DE ITALIA. UNA ABADIA CUYO NOMBRE PARECE AHORA MAS PIADOSO Y PRUDENTE OMITIR.
+Clave de cifrado  : GTYHUY
+Pista de búsqueda : PERGAMINO
+Tamaño mensaje    : 469 bytes
+Buscadores activos: 1
+
+>>> Clave encontrada por proceso 1: GTYHUY <<<
+
+========== ESTADÍSTICAS GLOBALES ==========
+Tiempo total (proceso 0): 195.045405 s
+
+--- Buscador 1 ---
+  Intentos totales  : 103872728
+  Aciertos de pista : 1
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 10633
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 195.045417 s
+
+--- TOTALES ---
+  Intentos totales (todos buscadores) : 103872728
+  Aciertos de pista (todos)           : 1
+  MPI_Send buscadores                 : 1
+  MPI_Recv buscadores                 : 1
+  MPI_Send proceso 0                  : 1
+  MPI_Recv proceso 0                  : 2
+  MPI_Bcast proceso 0                 : 3
+===========================================
+
+[Buscador 1 en alfasec] Clave ENCONTRADA: GTYHUY (195.045417 s, 103872728 intentos)
