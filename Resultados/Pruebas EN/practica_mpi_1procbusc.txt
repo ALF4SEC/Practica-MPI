@@ -7,7 +7,6 @@ Tamaño mensaje    : 469 bytes
 Buscadores activos: 1
 
 >>> Clave encontrada por proceso 1: GTYHUY <<<
-[Buscador 1 en alfasec] Clave ENCONTRADA: GTYHUY (173.197449 s, 103872728 intentos)
 --- Buscador 1 ---
   Intentos totales  : 103872728
   Aciertos de pista : 1
@@ -16,9 +15,9 @@ Buscadores activos: 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 3860
+  MPI_Iprobe        : 3683
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 173.197449 s
+  Tiempo buscador   : 166.853601 s
 
 --- TOTALES ---
   Intentos totales (todos buscadores) : 103872728
@@ -28,6 +27,7 @@ Buscadores activos: 1
   MPI_Send proceso 0                  : 1
   MPI_Recv/Probe proceso 0            : 2
   MPI_Bcast proceso 0                 : 3
-  Tiempo total (proceso 0)            : 173.197475 s
+[Buscador 1 en alfasec] Clave ENCONTRADA: GTYHUY (166.853601 s, 103872728 intentos)
+  Tiempo total (proceso 0)            : 166.853814 s
 ===========================================
 

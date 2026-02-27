@@ -4,10 +4,9 @@ Mensaje original  : HABIENDO LLEGADO AL FINAL DE MI VIDA DE POBRE PECADOR, CON E
 Clave de cifrado  : GTYHUY
 Pista de búsqueda : PERGAMINO
 Tamaño mensaje    : 469 bytes
-Buscadores activos: 1
+Buscadores activos: 2
 
 >>> Clave encontrada por proceso 1: GTYHUY <<<
-[Buscador 1 en alfasec] Clave ENCONTRADA: GTYHUY (173.197449 s, 103872728 intentos)
 --- Buscador 1 ---
   Intentos totales  : 103872728
   Aciertos de pista : 1
@@ -16,18 +15,31 @@ Buscadores activos: 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 3860
+  MPI_Iprobe        : 4162
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 173.197449 s
+  Tiempo buscador   : 184.570624 s
+[Buscador 1 en alfasec] Clave ENCONTRADA: GTYHUY (184.570624 s, 103872728 intentos)
+[Buscador 2 en alfasec] Parado (184.655614 s, 103753276 intentos, 0 pistas)
+--- Buscador 2 ---
+  Intentos totales  : 103753276
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 3693
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 184.655614 s
 
 --- TOTALES ---
-  Intentos totales (todos buscadores) : 103872728
+  Intentos totales (todos buscadores) : 207626004
   Aciertos de pista (todos)           : 1
-  MPI_Send buscadores                 : 2
-  MPI_Recv buscadores                 : 1
-  MPI_Send proceso 0                  : 1
-  MPI_Recv/Probe proceso 0            : 2
+  MPI_Send buscadores                 : 3
+  MPI_Recv buscadores                 : 2
+  MPI_Send proceso 0                  : 2
+  MPI_Recv/Probe proceso 0            : 3
   MPI_Bcast proceso 0                 : 3
-  Tiempo total (proceso 0)            : 173.197475 s
+  Tiempo total (proceso 0)            : 184.655615 s
 ===========================================
 

@@ -29,7 +29,7 @@
 #define CLAVE_CIFRADO    "GTYHUY"
 
 /* Cambiar para distintas pruebas: "EN", "ABADIA", "PERGAMINO" */
-#define PISTA_BUSQUEDA   "PERGAMINO"
+#define PISTA_BUSQUEDA   "EN"
 
 #define LEN_CLAVE        6
 

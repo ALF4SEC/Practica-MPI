@@ -7,6 +7,7 @@ Tamaño mensaje    : 469 bytes
 Buscadores activos: 32
 
 >>> Clave encontrada por proceso 18: GTYHUY <<<
+[Buscador 18 en alfasec] Clave ENCONTRADA: GTYHUY (160.009876 s, 10889329 intentos)
 --- Buscador 18 ---
   Intentos totales  : 10889329
   Aciertos de pista : 1
@@ -15,391 +16,390 @@ Buscadores activos: 32
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 16442
+  MPI_Iprobe        : 2896
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.663100 s
-[Buscador 18 en alfasec] Clave ENCONTRADA: GTYHUY (229.663100 s, 10889329 intentos)
-[Buscador 17 en alfasec] Parado (229.712878 s, 11957812 intentos, 0 pistas)
---- Buscador 17 ---
-  Intentos totales  : 11957812
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4035
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.712878 s
-[Buscador 21 en alfasec] Parado (229.727198 s, 11177375 intentos, 0 pistas)
-[Buscador 10 en alfasec] Parado (229.727243 s, 12539841 intentos, 0 pistas)
-[Buscador 14 en alfasec] Parado (229.727435 s, 12246935 intentos, 0 pistas)
-[Buscador 3 en alfasec] Parado (229.727669 s, 10858304 intentos, 0 pistas)
---- Buscador 21 ---
-  Intentos totales  : 11177375
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4025
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.727198 s
+  Tiempo buscador   : 160.009876 s
+[Buscador 3 en alfasec] Parado (160.056082 s, 10093508 intentos, 0 pistas)
+[Buscador 23 en alfasec] Parado (160.063892 s, 10771364 intentos, 0 pistas)
 --- Buscador 3 ---
-  Intentos totales  : 10858304
+  Intentos totales  : 10093508
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4020
+  MPI_Iprobe        : 2874
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.727669 s
---- Buscador 10 ---
-  Intentos totales  : 12539841
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4048
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.727243 s
---- Buscador 14 ---
-  Intentos totales  : 12246935
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4050
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.727435 s
-[Buscador 11 en alfasec] Parado (229.728502 s, 12041684 intentos, 0 pistas)
-[Buscador 22 en alfasec] Parado (229.728801 s, 12116678 intentos, 0 pistas)
-[Buscador 25 en alfasec] Parado (229.731604 s, 10436960 intentos, 0 pistas)
-[Buscador 9 en alfasec] Parado (229.734395 s, 15451521 intentos, 0 pistas)
---- Buscador 11 ---
-  Intentos totales  : 12041684
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4043
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.728502 s
---- Buscador 22 ---
-  Intentos totales  : 12116678
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4050
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.728801 s
---- Buscador 25 ---
-  Intentos totales  : 10436960
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4018
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.731604 s
-[Buscador 19 en alfasec] Parado (229.736619 s, 10682703 intentos, 0 pistas)
---- Buscador 19 ---
-  Intentos totales  : 10682703
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4011
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.736619 s
---- Buscador 9 ---
-  Intentos totales  : 15451521
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4099
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.734395 s
-[Buscador 26 en alfasec] Parado (229.743027 s, 10538629 intentos, 0 pistas)
---- Buscador 26 ---
-  Intentos totales  : 10538629
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4018
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.743027 s
-[Buscador 4 en alfasec] Parado (229.745244 s, 13983794 intentos, 0 pistas)
---- Buscador 4 ---
-  Intentos totales  : 13983794
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4094
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.745244 s
-[Buscador 28 en alfasec] Parado (229.748683 s, 12743626 intentos, 0 pistas)
---- Buscador 28 ---
-  Intentos totales  : 12743626
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4049
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.748683 s
-[Buscador 29 en alfasec] Parado (229.759320 s, 11225395 intentos, 0 pistas)
---- Buscador 29 ---
-  Intentos totales  : 11225395
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-[Buscador 16 en alfasec] Parado (229.760785 s, 10532417 intentos, 0 pistas)
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4027
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.759320 s
-[Buscador 20 en alfasec] Parado (229.760709 s, 10534314 intentos, 0 pistas)
---- Buscador 16 ---
-  Intentos totales  : 10532417
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4006
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.760785 s
---- Buscador 20 ---
-  Intentos totales  : 10534314
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4012
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.760709 s
-[Buscador 32 en alfasec] Parado (229.762644 s, 10143820 intentos, 0 pistas)
---- Buscador 32 ---
-  Intentos totales  : 10143820
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 3993
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.762644 s
-[Buscador 8 en alfasec] Parado (229.763331 s, 12564184 intentos, 0 pistas)
---- Buscador 8 ---
-  Intentos totales  : 12564184
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4027
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.763331 s
-[Buscador 27 en alfasec] Parado (229.767215 s, 12420640 intentos, 0 pistas)
---- Buscador 27 ---
-  Intentos totales  : 12420640
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4047
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.767215 s
-[Buscador 12 en alfasec] Parado (229.767032 s, 12634962 intentos, 0 pistas)
---- Buscador 12 ---
-  Intentos totales  : 12634962
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4051
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.767032 s
-[Buscador 24 en alfasec] Parado (229.770945 s, 10324236 intentos, 0 pistas)
---- Buscador 24 ---
-[Buscador 30 en alfasec] Parado (229.771886 s, 10461408 intentos, 0 pistas)
-  Intentos totales  : 10324236
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4000
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.770945 s
---- Buscador 30 ---
-  Intentos totales  : 10461408
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 3982
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.771886 s
-[Buscador 31 en alfasec] Parado (229.772644 s, 13752471 intentos, 0 pistas)
---- Buscador 31 ---
-  Intentos totales  : 13752471
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4078
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.772644 s
-[Buscador 23 en alfasec] Parado (229.774252 s, 11943464 intentos, 0 pistas)
-[Buscador 13 en alfasec] Parado (229.775336 s, 10404611 intentos, 0 pistas)
+  Tiempo buscador   : 160.056082 s
 --- Buscador 23 ---
-  Intentos totales  : 11943464
+  Intentos totales  : 10771364
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4025
+  MPI_Iprobe        : 2889
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.774252 s
---- Buscador 13 ---
-  Intentos totales  : 10404611
-  Aciertos de pista : 0
-  MPI_Send          : 1
-  MPI_Recv          : 1
-  MPI_Isend         : 0
-  MPI_Irecv         : 0
-  MPI_Probe         : 0
-  MPI_Iprobe        : 4009
-  MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.775336 s
-[Buscador 5 en alfasec] Parado (229.777324 s, 10812953 intentos, 0 pistas)
+  Tiempo buscador   : 160.063892 s
+[Buscador 5 en alfasec] Parado (160.070054 s, 9645884 intentos, 0 pistas)
 --- Buscador 5 ---
-  Intentos totales  : 10812953
+  Intentos totales  : 9645884
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-[Buscador 2 en alfasec] Parado (229.777900 s, 12356059 intentos, 0 pistas)
-  MPI_Iprobe        : 4019
+  MPI_Iprobe        : 2868
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.777324 s
---- Buscador 2 ---
-  Intentos totales  : 12356059
+  Tiempo buscador   : 160.070054 s
+--- Buscador 8 ---
+  Intentos totales  : 9853306
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4052
+  MPI_Iprobe        : 2880
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.777900 s
-[Buscador 15 en alfasec] Parado (229.780860 s, 12072241 intentos, 0 pistas)
---- Buscador 15 ---
-  Intentos totales  : 12072241
+  Tiempo buscador   : 160.070058 s
+[Buscador 8 en alfasec] Parado (160.070058 s, 9853306 intentos, 0 pistas)
+[Buscador 30 en alfasec] Parado (160.071597 s, 10583901 intentos, 0 pistas)
+[Buscador 21 en alfasec] Parado (160.071722 s, 11581286 intentos, 0 pistas)
+--- Buscador 30 ---
+  Intentos totales  : 10583901
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4032
+  MPI_Iprobe        : 2892
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.780860 s
-[Buscador 7 en alfasec] Parado (229.782723 s, 10791460 intentos, 0 pistas)
+  Tiempo buscador   : 160.071597 s
+--- Buscador 21 ---
+  Intentos totales  : 11581286
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2895
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.071722 s
+[Buscador 7 en alfasec] Parado (160.078034 s, 9733190 intentos, 0 pistas)
+[Buscador 9 en alfasec] Parado (160.079974 s, 11997647 intentos, 0 pistas)
+[Buscador 10 en alfasec] Parado (160.079964 s, 8992215 intentos, 0 pistas)
+[Buscador 32 en alfasec] Parado (160.079400 s, 11538482 intentos, 0 pistas)
+[Buscador 22 en alfasec] Parado (160.079623 s, 9000951 intentos, 0 pistas)
+[Buscador 4 en alfasec] Parado (160.084044 s, 10459365 intentos, 0 pistas)
 --- Buscador 7 ---
-  Intentos totales  : 10791460
+  Intentos totales  : 9733190
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4025
+  MPI_Iprobe        : 2879
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.782723 s
-[Buscador 1 en alfasec] Parado (229.784640 s, 12349122 intentos, 0 pistas)
---- Buscador 1 ---
-  Intentos totales  : 12349122
+  Tiempo buscador   : 160.078034 s
+--- Buscador 22 ---
+  Intentos totales  : 9000951
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4042
+  MPI_Iprobe        : 2865
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.784640 s
-[Buscador 6 en alfasec] Parado (229.787394 s, 12037743 intentos, 0 pistas)
+  Tiempo buscador   : 160.079623 s
+--- Buscador 32 ---
+  Intentos totales  : 11538482
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2880
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.079400 s
+--- Buscador 9 ---
+  Intentos totales  : 11997647
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2905
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.079974 s
+--- Buscador 10 ---
+  Intentos totales  : 8992215
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2855
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.079964 s
+--- Buscador 4 ---
+  Intentos totales  : 10459365
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2880
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.084044 s
+[Buscador 20 en alfasec] Parado (160.086111 s, 10790365 intentos, 0 pistas)
+[Buscador 15 en alfasec] Parado (160.085831 s, 10470363 intentos, 0 pistas)
+[Buscador 13 en alfasec] Parado (160.089540 s, 9735939 intentos, 0 pistas)
+--- Buscador 20 ---
+  Intentos totales  : 10790365
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2876
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.086111 s
+--- Buscador 13 ---
+  Intentos totales  : 9735939
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2887
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.089540 s
+--- Buscador 15 ---
+  Intentos totales  : 10470363
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2891
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.085831 s
+[Buscador 6 en alfasec] Parado (160.092053 s, 10367518 intentos, 0 pistas)
+[Buscador 17 en alfasec] Parado (160.091785 s, 9769970 intentos, 0 pistas)
+[Buscador 14 en alfasec] Parado (160.091701 s, 10191114 intentos, 0 pistas)
+[Buscador 31 en alfasec] Parado (160.092264 s, 9606054 intentos, 0 pistas)
+[Buscador 16 en alfasec] Parado (160.091931 s, 10973185 intentos, 0 pistas)
+--- Buscador 14 ---
+  Intentos totales  : 10191114
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2880
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.091701 s
+--- Buscador 16 ---
+  Intentos totales  : 10973185
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2890
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.091931 s
+--- Buscador 17 ---
+  Intentos totales  : 9769970
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2878
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.091785 s
+--- Buscador 31 ---
+  Intentos totales  : 9606054
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2872
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.092264 s
 --- Buscador 6 ---
-  Intentos totales  : 12037743
+  Intentos totales  : 10367518
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4042
+  MPI_Iprobe        : 2888
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 229.787394 s
+  Tiempo buscador   : 160.092053 s
+--- Buscador 28 ---
+  Intentos totales  : 10961065
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2880
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.095659 s
+[Buscador 28 en alfasec] Parado (160.095659 s, 10961065 intentos, 0 pistas)
+[Buscador 29 en alfasec] Parado (160.097854 s, 9816739 intentos, 0 pistas)
+[Buscador 24 en alfasec] Parado (160.098002 s, 10241957 intentos, 0 pistas)
+[Buscador 19 en alfasec] Parado (160.098020 s, 9764037 intentos, 0 pistas)
+--- Buscador 29 ---
+  Intentos totales  : 9816739
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2882
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.097854 s
+--- Buscador 24 ---
+  Intentos totales  : 10241957
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2886
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.098002 s
+--- Buscador 19 ---
+  Intentos totales  : 9764037
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2876
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.098020 s
+[Buscador 27 en alfasec] Parado (160.103529 s, 11142709 intentos, 0 pistas)
+[Buscador 26 en alfasec] Parado (160.103768 s, 11138686 intentos, 0 pistas)
+--- Buscador 27 ---
+  Intentos totales  : 11142709
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2883
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.103529 s
+--- Buscador 26 ---
+  Intentos totales  : 11138686
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2913
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.103768 s
+[Buscador 12 en alfasec] Parado (160.104225 s, 10187676 intentos, 0 pistas)
+--- Buscador 12 ---
+  Intentos totales  : 10187676
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2881
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.104225 s
+[Buscador 1 en alfasec] Parado (160.107496 s, 10431929 intentos, 0 pistas)
+--- Buscador 1 ---
+  Intentos totales  : 10431929
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2885
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.107496 s
+[Buscador 2 en alfasec] Parado (160.111790 s, 10029707 intentos, 0 pistas)
+--- Buscador 2 ---
+  Intentos totales  : 10029707
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2873
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.111790 s
+[Buscador 25 en alfasec] Parado (160.119947 s, 12186607 intentos, 0 pistas)
+--- Buscador 25 ---
+  Intentos totales  : 12186607
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2898
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.119947 s
+[Buscador 11 en alfasec] Parado (160.124110 s, 10695045 intentos, 0 pistas)
+--- Buscador 11 ---
+  Intentos totales  : 10695045
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2885
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 160.124110 s
 
 --- TOTALES ---
-  Intentos totales (todos buscadores) : 375026691
+  Intentos totales (todos buscadores) : 333641093
   Aciertos de pista (todos)           : 1
   MPI_Send buscadores                 : 33
   MPI_Recv buscadores                 : 32
   MPI_Send proceso 0                  : 32
   MPI_Recv/Probe proceso 0            : 33
   MPI_Bcast proceso 0                 : 3
-  Tiempo total (proceso 0)            : 229.787792 s
+  Tiempo total (proceso 0)            : 160.123923 s
 ===========================================
 

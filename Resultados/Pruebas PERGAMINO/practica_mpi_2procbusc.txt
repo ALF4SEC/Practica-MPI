@@ -12,34 +12,34 @@ Buscadores activos: 2
   Aciertos de pista : 1
   MPI_Send          : 2
   MPI_Recv          : 1
+[Buscador 1 en alfasec] Clave ENCONTRADA: GTYHUY (185.078115 s, 103872728 intentos)
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4562
+  MPI_Iprobe        : 4064
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 212.778176 s
-[Buscador 1 en alfasec] Clave ENCONTRADA: GTYHUY (212.778176 s, 103872728 intentos)
-[Buscador 2 en alfasec] Parado (212.858133 s, 103410426 intentos, 0 pistas)
+  Tiempo buscador   : 185.078115 s
+[Buscador 2 en alfasec] Parado (185.156007 s, 104114323 intentos, 0 pistas)
 --- Buscador 2 ---
-  Intentos totales  : 103410426
+  Intentos totales  : 104114323
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4257
+  MPI_Iprobe        : 3703
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 212.858133 s
+  Tiempo buscador   : 185.156007 s
 
 --- TOTALES ---
-  Intentos totales (todos buscadores) : 207283154
+  Intentos totales (todos buscadores) : 207987051
   Aciertos de pista (todos)           : 1
   MPI_Send buscadores                 : 3
   MPI_Recv buscadores                 : 2
   MPI_Send proceso 0                  : 2
   MPI_Recv/Probe proceso 0            : 3
   MPI_Bcast proceso 0                 : 3
-  Tiempo total (proceso 0)            : 212.858324 s
+  Tiempo total (proceso 0)            : 185.156072 s
 ===========================================
 
