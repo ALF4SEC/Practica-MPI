@@ -28,8 +28,8 @@
 
 #define CLAVE_CIFRADO    "GTYHUY"
 
-/* Cambiar para distintas pruebas: "EN", "ABADIA", "PERGAMINO" */
-#define PISTA_BUSQUEDA   "EN"
+/* Cambiar para distintas pruebas: "EN", "ABADIA",  "PERGAMINO" */
+#define PISTA_BUSQUEDA   "PERGAMINO"
 
 #define LEN_CLAVE        6
 
@@ -37,22 +37,28 @@
 #define MAX_PISTA        64
 #define MAX_NOMBRE       MPI_MAX_PROCESSOR_NAME
 
-/* Intervalo de comprobacion de TAG_PARAR en segundos */
+/* Intervalo de comprobacion de TAG_PARAR (solo rama sin pista) en segundos */
 #define INTERVALO_CHECK  0.05
 
 /* =========================================================
  *  ETIQUETAS MPI
  * ========================================================= */
-#define TAG_CONSULTA_CLAVE  20
+#define TAG_CONSULTA_CLAVE  20  
 #define TAG_RESPUESTA_CLAVE 21
 #define TAG_PARAR           22
 #define TAG_ESTADISTICAS    30
 
 /* =========================================================
  *  RESPUESTAS DEL PROCESO 0
+ *  RESP_PARAR se usa cuando la clave ya fue encontrada por
+ *  otro buscador y llega una consulta nueva: en vez de enviar
+ *  TAG_PARAR + RESP_CLAVE_MAL (que dejaría un mensaje sin leer),
+ *  se responde con RESP_PARAR por TAG_RESPUESTA_CLAVE para que
+ *  el buscador lo consuma en su inner-loop y termine limpiamente.
  * ========================================================= */
 #define RESP_CLAVE_OK   1
 #define RESP_CLAVE_MAL  0
+#define RESP_PARAR      2
 
 /* =========================================================
  *  ESTRUCTURA DE ESTADISTICAS
@@ -184,13 +190,13 @@ void proceso_ES(int num_procs)
 
     double t_ini = mygettime();
 
-    /*Broadcast de datos iniciales*/
+    /* Broadcast de datos iniciales */
     int datos_ini[3] = {tam_msg, tam_pista, tam_clave};
     MPI_Bcast(datos_ini,       3,         MPI_INT,  0, MPI_COMM_WORLD); n_bcast++;
     MPI_Bcast(mensaje_cifrado, tam_msg,   MPI_CHAR, 0, MPI_COMM_WORLD); n_bcast++;
     MPI_Bcast((char*)pista,    tam_pista, MPI_CHAR, 0, MPI_COMM_WORLD); n_bcast++;
 
-    /*Tipo derivado para estadisticas*/
+    /* Tipo derivado para estadisticas */
     MPI_Datatype tipo_stats;
     crear_tipo_estadisticas(&tipo_stats);
 
@@ -202,6 +208,18 @@ void proceso_ES(int num_procs)
     char clave_recibida[MAX_PISTA + 1];
     MPI_Status status;
 
+    /*
+     * Bucle principal del proceso 0.
+     * Espera con MPI_Probe a cualquier mensaje de cualquier buscador.
+     * Puede recibir:
+     *   - TAG_CONSULTA_CLAVE : un buscador cree haber encontrado la clave
+     *   - TAG_ESTADISTICAS   : un buscador ha terminado y manda sus stats
+     *
+     * Cuando ya se encontro la clave y llega una TAG_CONSULTA_CLAVE nueva,
+     * se responde con RESP_PARAR (por TAG_RESPUESTA_CLAVE) en vez de enviar
+     * un TAG_PARAR separado. Asi el buscador lo consume en su inner-loop
+     * y no queda ningun mensaje sin leer.
+     */
     while (buscadores_pendientes > 0) {
 
         MPI_Probe(MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
@@ -211,15 +229,18 @@ void proceso_ES(int num_procs)
         int tag    = status.MPI_TAG;
 
         if (tag == TAG_CONSULTA_CLAVE) {
+
             MPI_Recv(clave_recibida, tam_clave, MPI_CHAR,
                      origen, TAG_CONSULTA_CLAVE, MPI_COMM_WORLD, &status);
             n_recv++;
             clave_recibida[tam_clave] = '\0';
 
             int respuesta;
+
             if (!clave_encontrada &&
                 strncmp(clave_recibida, clave_real, tam_clave) == 0) {
 
+                /* --- CLAVE CORRECTA --- */
                 clave_encontrada = 1;
                 respuesta = RESP_CLAVE_OK;
                 MPI_Send(&respuesta, 1, MPI_INT, origen,
@@ -230,7 +251,13 @@ void proceso_ES(int num_procs)
                        origen, clave_recibida);
                 fflush(stdout);
 
-                /* Avisar al resto */
+                /*
+                 * Avisar con TAG_PARAR solo a los buscadores que NO tienen
+                 * ninguna consulta pendiente en este momento (los que estan
+                 * en la rama "sin pista" del bucle principal).
+                 * Los que tengan una consulta pendiente recibiran RESP_PARAR
+                 * cuando la envien y proceso 0 la atienda.
+                 */
                 int parar = 1;
                 for (int p = 1; p < num_procs; p++) {
                     if (p != origen) {
@@ -240,7 +267,31 @@ void proceso_ES(int num_procs)
                     }
                 }
 
+            } else if (clave_encontrada) {
+
+                /*
+                 * La clave ya fue encontrada antes por otro buscador,
+                 * pero este ha enviado una consulta que hay que responder
+                 * obligatoriamente para no dejar mensajes sin leer.
+                 * Se responde RESP_PARAR por TAG_RESPUESTA_CLAVE para que
+                 * el buscador lo consuma en su inner-loop y termine limpio.
+                 * Como ya se envio TAG_PARAR a este proceso antes, tambien
+                 * podria haber llegado ese TAG_PARAR; pero no importa:
+                 * el buscador comprueba primero TAG_RESPUESTA_CLAVE en su
+                 * inner-loop, asi que lo consumira correctamente.
+                 * El TAG_PARAR ya enviado puede quedar pendiente, pero como
+                 * el buscador siempre hace MPI_Iprobe de TAG_PARAR despues
+                 * de salir del inner-loop lo consumira antes de terminar
+                 * (ver rama "flush" al final de proceso_buscador).
+                 */
+                respuesta = RESP_PARAR;
+                MPI_Send(&respuesta, 1, MPI_INT, origen,
+                         TAG_RESPUESTA_CLAVE, MPI_COMM_WORLD);
+                n_send++;
+
             } else {
+
+                /* --- CLAVE INCORRECTA --- */
                 respuesta = RESP_CLAVE_MAL;
                 MPI_Send(&respuesta, 1, MPI_INT, origen,
                          TAG_RESPUESTA_CLAVE, MPI_COMM_WORLD);
@@ -248,6 +299,7 @@ void proceso_ES(int num_procs)
             }
 
         } else if (tag == TAG_ESTADISTICAS) {
+
             MPI_Recv(&stats_buscadores[origen], 1, tipo_stats,
                      origen, TAG_ESTADISTICAS, MPI_COMM_WORLD, &status);
             n_recv++;
@@ -304,16 +356,12 @@ void proceso_ES(int num_procs)
  * ========================================================= */
 void proceso_buscador(int id, int num_procs)
 {
-    char nombre_proc[MAX_NOMBRE];
-    int  lon_nombre;
-    MPI_Get_processor_name(nombre_proc, &lon_nombre);
-
     Estadisticas est;
     memset(&est, 0, sizeof(est));
 
     double t_ini = mygettime();
 
-    /*Recibir datos iniciales por Bcast*/
+    /* Recibir datos iniciales por Bcast */
     int datos_ini[3];
     MPI_Bcast(datos_ini, 3, MPI_INT, 0, MPI_COMM_WORLD);
     est.n_bcast++;
@@ -333,9 +381,7 @@ void proceso_buscador(int id, int num_procs)
 
     char mensaje_descifrado[MAX_MSG + 1];
 
-    /*
-    Inicializacion de las semillas de los buscadores
-    */
+    /* Semilla distinta por proceso para que busquen zonas distintas */
     mysrand((unsigned int)(id * 31337 + 12345));
 
     char clave[MAX_PISTA];
@@ -355,6 +401,8 @@ void proceso_buscador(int id, int num_procs)
         mensaje_descifrado[tam_msg] = '\0';
 
         if (strstr(mensaje_descifrado, pista) != NULL) {
+
+            /* La pista aparece: consultar al proceso 0 */
             est.aciertos_pista++;
 
             MPI_Send(clave, tam_clave, MPI_CHAR, 0,
@@ -362,13 +410,14 @@ void proceso_buscador(int id, int num_procs)
             est.n_send++;
 
             /*
-             * Esperar respuesta del proceso 0 con Iprobe alternando
-             * entre TAG_RESPUESTA_CLAVE y TAG_PARAR.
+             * Inner-loop: esperar UNICAMENTE TAG_RESPUESTA_CLAVE.
+             * Proceso 0 siempre responde a cada consulta, bien con
+             * RESP_CLAVE_OK, RESP_CLAVE_MAL o RESP_PARAR.
+             * Esto garantiza que no quede ninguna consulta sin respuesta.
              */
             int recibido = 0;
             while (!recibido) {
                 int flag;
-
                 MPI_Iprobe(0, TAG_RESPUESTA_CLAVE,
                            MPI_COMM_WORLD, &flag, &status);
                 est.n_iprobe++;
@@ -379,29 +428,23 @@ void proceso_buscador(int id, int num_procs)
                              MPI_COMM_WORLD, &status);
                     est.n_recv++;
                     recibido = 1;
+
                     if (respuesta == RESP_CLAVE_OK) {
                         terminado = 1;
                         clave_ok  = 1;
+                    } else if (respuesta == RESP_PARAR) {
+                        terminado = 1;
                     }
-                    break;
-                }
-
-                MPI_Iprobe(0, TAG_PARAR,
-                           MPI_COMM_WORLD, &flag, &status);
-                est.n_iprobe++;
-                if (flag) {
-                    int dummy;
-                    MPI_Recv(&dummy, 1, MPI_INT, 0, TAG_PARAR,
-                             MPI_COMM_WORLD, &status);
-                    est.n_recv++;
-                    terminado = 1;
-                    recibido  = 1;
-                    break;
+                    /* RESP_CLAVE_MAL: sigue buscando */
                 }
             }
 
         } else {
-            /* Comprobar TAG_PARAR cada INTERVALO_CHECK segundos */
+
+            /*
+             * La pista NO aparece: comprobar TAG_PARAR periodicamente
+             * para no bloquear el bucle de busqueda indefinidamente.
+             */
             double ahora = mygettime();
             if (ahora - ultimo_check >= INTERVALO_CHECK) {
                 ultimo_check = ahora;
@@ -420,27 +463,34 @@ void proceso_buscador(int id, int num_procs)
         }
     }
 
+    /*
+     * Flush: al salir del bucle pueden quedar pendientes:
+     *   - Un TAG_PARAR si este buscador termino por RESP_PARAR en el
+     *     inner-loop (proceso 0 ya habia enviado TAG_PARAR antes de que
+     *     llegara la consulta de este buscador).
+     * Se consume con Iprobe para no dejar mensajes sin leer.
+     */
+    {
+        int flag;
+        MPI_Iprobe(0, TAG_PARAR, MPI_COMM_WORLD, &flag, &status);
+        est.n_iprobe++;
+        if (flag) {
+            int dummy;
+            MPI_Recv(&dummy, 1, MPI_INT, 0, TAG_PARAR,
+                    MPI_COMM_WORLD, &status);
+            est.n_recv++;
+        }
+    }
+
     double t_fin = mygettime();
     est.tiempo = t_fin - t_ini;
 
-    if (clave_ok) {
-        printf("[Buscador %d en %s] Clave ENCONTRADA: %s "
-               "(%.6f s, %lld intentos)\n",
-               id, nombre_proc, clave,
-               est.tiempo, est.intentos_totales);
-    } else {
-        printf("[Buscador %d en %s] Parado "
-               "(%.6f s, %lld intentos, %lld pistas)\n",
-               id, nombre_proc, est.tiempo,
-               est.intentos_totales, est.aciertos_pista);
-    }
-    fflush(stdout);
-
-    /* Enviar estadisticas (contamos el Send antes de enviarlo) */
+    /* Enviar estadisticas al proceso 0
+     * (Solo el proceso 0 imprime segun el enunciado) */
     MPI_Datatype tipo_stats;
     crear_tipo_estadisticas(&tipo_stats);
 
-    est.n_send++;
+    est.n_send++;   /* contamos este Send en las estadisticas */
     MPI_Send(&est, 1, tipo_stats, 0, TAG_ESTADISTICAS, MPI_COMM_WORLD);
 
     MPI_Type_free(&tipo_stats);
