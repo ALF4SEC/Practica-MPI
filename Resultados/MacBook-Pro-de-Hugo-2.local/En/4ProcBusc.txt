@@ -1,0 +1,70 @@
+
+=== PROCESO 0 (E/S) en MacBook-Pro-de-Hugo-2.local ===
+Mensaje original  : HABIENDO LLEGADO AL FINAL DE MI VIDA DE POBRE PECADOR, CON EL PELO YA CANOSO, ME DISPONGO A DEJAR CONSTANCIA SOBRE ESTE PERGAMINO DE LOS HECHOS ASOMBROSOS Y TERRIBLES QUE ME FUE DADO PRESENCIAR EN MI JUVENTUD, HACIA FINALES DEL ANHO DEL SENHOR DE 1327. QUE DIOS ME CONCEDA SABIDURIA Y GRACIA PARA SER FIEL NARRADOR DE LOS SUCESOS QUE TUVIERON LUGAR EN UNA REMOTA ABADIA EN EL RECONDITO NORTE DE ITALIA. UNA ABADIA CUYO NOMBRE PARECE AHORA MAS PIADOSO Y PRUDENTE OMITIR.
+Clave de cifrado  : GTYHUY
+Pista de busqueda : EN
+Tamano mensaje    : 469 bytes
+Buscadores activos: 4
+
+>>> Clave encontrada por proceso 3: GTYHUY <<<
+
+========== ESTADISTICAS GLOBALES ==========
+Tiempo total (proceso 0): 17.158338 s
+
+--- Buscador 1 ---
+  Intentos totales  : 19890572
+  Aciertos de pista : 3888944
+  MPI_Send          : 3888945
+  MPI_Recv          : 3888945
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 33987926
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 17.158310 s
+--- Buscador 2 ---
+  Intentos totales  : 19917521
+  Aciertos de pista : 3893875
+  MPI_Send          : 3893876
+  MPI_Recv          : 3893876
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 33783688
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 17.158305 s
+--- Buscador 3 ---
+  Intentos totales  : 19939843
+  Aciertos de pista : 3895575
+  MPI_Send          : 3895576
+  MPI_Recv          : 3895575
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 33186848
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 17.158174 s
+--- Buscador 4 ---
+  Intentos totales  : 19917795
+  Aciertos de pista : 3889211
+  MPI_Send          : 3889212
+  MPI_Recv          : 3889212
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 34576519
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 17.158311 s
+
+--- TOTALES ---
+  Intentos totales (todos buscadores) : 79665731
+  Aciertos de pista (todos)           : 15567605
+  MPI_Send buscadores                 : 15567609
+  MPI_Recv buscadores                 : 15567608
+  MPI_Send proceso 0                  : 15567608
+  MPI_Recv proceso 0                  : 15567609
+  MPI_Probe proceso 0                 : 15567609
+  MPI_Bcast proceso 0                 : 3
+  Tiempo total (proceso 0)            : 17.158338 s
+===========================================
+

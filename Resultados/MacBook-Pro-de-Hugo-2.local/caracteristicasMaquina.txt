@@ -1,0 +1,4 @@
+Model Name:	MacBook Pro
+Chip:	Apple M4
+Total Number of Cores:	10 (4 Performance and 6 Efficiency)
+Memory:	24 GB
