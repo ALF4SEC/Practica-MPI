@@ -9,7 +9,7 @@ Buscadores activos: 1
 >>> Clave encontrada por proceso 1: GTYHUY <<<
 
 ========== ESTADISTICAS GLOBALES ==========
-Tiempo total (proceso 0): 199.100247 s
+Tiempo total (proceso 0): 169.186615 s
 
 --- Buscador 1 ---
   Intentos totales  : 103872728
@@ -19,9 +19,9 @@ Tiempo total (proceso 0): 199.100247 s
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 4304
+  MPI_Iprobe        : 10388
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 199.100329 s
+  Tiempo buscador   : 169.186495 s
 
 --- TOTALES ---
   Intentos totales (todos buscadores) : 103872728
@@ -32,6 +32,6 @@ Tiempo total (proceso 0): 199.100247 s
   MPI_Recv proceso 0                  : 2
   MPI_Probe proceso 0                 : 2
   MPI_Bcast proceso 0                 : 3
-  Tiempo total (proceso 0)            : 199.100247 s
+  Tiempo total (proceso 0)            : 169.186615 s
 ===========================================
 

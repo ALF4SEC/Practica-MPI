@@ -9,30 +9,30 @@ Buscadores activos: 4
 >>> Clave encontrada por proceso 3: GTYHUY <<<
 
 ========== ESTADISTICAS GLOBALES ==========
-Tiempo total (proceso 0): 50.003056 s
+Tiempo total (proceso 0): 63.669422 s
 
 --- Buscador 1 ---
-  Intentos totales  : 17289819
+  Intentos totales  : 32280000
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1001
+  MPI_Iprobe        : 3229
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 50.003160 s
+  Tiempo buscador   : 63.669447 s
 --- Buscador 2 ---
-  Intentos totales  : 17414743
+  Intentos totales  : 32220000
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1001
+  MPI_Iprobe        : 3223
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 50.002820 s
+  Tiempo buscador   : 63.663625 s
 --- Buscador 3 ---
   Intentos totales  : 19939843
   Aciertos de pista : 1
@@ -41,23 +41,23 @@ Tiempo total (proceso 0): 50.003056 s
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1054
+  MPI_Iprobe        : 1994
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 49.912568 s
+  Tiempo buscador   : 63.630822 s
 --- Buscador 4 ---
-  Intentos totales  : 22908693
+  Intentos totales  : 18810000
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1001
+  MPI_Iprobe        : 1882
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 50.002590 s
+  Tiempo buscador   : 63.659022 s
 
 --- TOTALES ---
-  Intentos totales (todos buscadores) : 77553098
+  Intentos totales (todos buscadores) : 103249843
   Aciertos de pista (todos)           : 1
   MPI_Send buscadores                 : 5
   MPI_Recv buscadores                 : 4
@@ -65,6 +65,6 @@ Tiempo total (proceso 0): 50.003056 s
   MPI_Recv proceso 0                  : 5
   MPI_Probe proceso 0                 : 5
   MPI_Bcast proceso 0                 : 3
-  Tiempo total (proceso 0)            : 50.003056 s
+  Tiempo total (proceso 0)            : 63.669422 s
 ===========================================
 

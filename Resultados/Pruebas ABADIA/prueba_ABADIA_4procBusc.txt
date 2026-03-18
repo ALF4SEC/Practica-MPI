@@ -9,30 +9,30 @@ Buscadores activos: 4
 >>> Clave encontrada por proceso 3: GTYHUY <<<
 
 ========== ESTADISTICAS GLOBALES ==========
-Tiempo total (proceso 0): 78.804294 s
+Tiempo total (proceso 0): 37.591189 s
 
 --- Buscador 1 ---
-  Intentos totales  : 36308287
-  Aciertos de pista : 5
-  MPI_Send          : 6
-  MPI_Recv          : 6
+  Intentos totales  : 19960000
+  Aciertos de pista : 2
+  MPI_Send          : 3
+  MPI_Recv          : 3
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1633
+  MPI_Iprobe        : 1997
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 78.804036 s
+  Tiempo buscador   : 37.561876 s
 --- Buscador 2 ---
-  Intentos totales  : 36586007
-  Aciertos de pista : 4
-  MPI_Send          : 5
-  MPI_Recv          : 5
+  Intentos totales  : 10420000
+  Aciertos de pista : 3
+  MPI_Send          : 4
+  MPI_Recv          : 4
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1637
+  MPI_Iprobe        : 1043
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 78.802994 s
+  Tiempo buscador   : 37.591132 s
 --- Buscador 3 ---
   Intentos totales  : 19939843
   Aciertos de pista : 4
@@ -41,30 +41,30 @@ Tiempo total (proceso 0): 78.804294 s
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1625
+  MPI_Iprobe        : 1994
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 78.715778 s
+  Tiempo buscador   : 37.532572 s
 --- Buscador 4 ---
-  Intentos totales  : 19463584
-  Aciertos de pista : 3
-  MPI_Send          : 4
-  MPI_Recv          : 4
+  Intentos totales  : 10420000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1624
+  MPI_Iprobe        : 1043
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 78.804319 s
+  Tiempo buscador   : 37.587746 s
 
 --- TOTALES ---
-  Intentos totales (todos buscadores) : 112297721
-  Aciertos de pista (todos)           : 16
-  MPI_Send buscadores                 : 20
-  MPI_Recv buscadores                 : 19
-  MPI_Send proceso 0                  : 19
-  MPI_Recv proceso 0                  : 20
-  MPI_Probe proceso 0                 : 20
+  Intentos totales (todos buscadores) : 60739843
+  Aciertos de pista (todos)           : 9
+  MPI_Send buscadores                 : 13
+  MPI_Recv buscadores                 : 12
+  MPI_Send proceso 0                  : 12
+  MPI_Recv proceso 0                  : 13
+  MPI_Probe proceso 0                 : 13
   MPI_Bcast proceso 0                 : 3
-  Tiempo total (proceso 0)            : 78.804294 s
+  Tiempo total (proceso 0)            : 37.591189 s
 ===========================================
 

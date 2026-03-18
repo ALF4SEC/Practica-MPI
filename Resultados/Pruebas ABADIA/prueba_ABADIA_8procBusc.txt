@@ -9,30 +9,30 @@ Buscadores activos: 8
 >>> Clave encontrada por proceso 3: GTYHUY <<<
 
 ========== ESTADISTICAS GLOBALES ==========
-Tiempo total (proceso 0): 94.063724 s
+Tiempo total (proceso 0): 78.176030 s
 
 --- Buscador 1 ---
-  Intentos totales  : 18297546
+  Intentos totales  : 20810000
   Aciertos de pista : 2
   MPI_Send          : 3
   MPI_Recv          : 3
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1869
+  MPI_Iprobe        : 2082
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 94.026931 s
+  Tiempo buscador   : 78.153589 s
 --- Buscador 2 ---
-  Intentos totales  : 18697071
+  Intentos totales  : 19730000
   Aciertos de pista : 4
   MPI_Send          : 5
   MPI_Recv          : 5
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 2580
+  MPI_Iprobe        : 1974
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 94.023656 s
+  Tiempo buscador   : 78.149436 s
 --- Buscador 3 ---
   Intentos totales  : 19939843
   Aciertos de pista : 4
@@ -41,67 +41,67 @@ Tiempo total (proceso 0): 94.063724 s
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1900
+  MPI_Iprobe        : 1994
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 93.966336 s
+  Tiempo buscador   : 78.109120 s
 --- Buscador 4 ---
-  Intentos totales  : 19608018
+  Intentos totales  : 19780000
   Aciertos de pista : 3
   MPI_Send          : 4
   MPI_Recv          : 4
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 5476
+  MPI_Iprobe        : 1979
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 94.036974 s
+  Tiempo buscador   : 78.137801 s
 --- Buscador 5 ---
-  Intentos totales  : 20513846
+  Intentos totales  : 20250000
   Aciertos de pista : 4
   MPI_Send          : 5
   MPI_Recv          : 5
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1913
+  MPI_Iprobe        : 2026
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 94.063810 s
+  Tiempo buscador   : 78.176099 s
 --- Buscador 6 ---
-  Intentos totales  : 19361860
+  Intentos totales  : 20180000
   Aciertos de pista : 0
   MPI_Send          : 1
   MPI_Recv          : 1
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1861
+  MPI_Iprobe        : 2019
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 94.043620 s
+  Tiempo buscador   : 78.151157 s
 --- Buscador 7 ---
-  Intentos totales  : 19526422
+  Intentos totales  : 19580000
   Aciertos de pista : 2
   MPI_Send          : 3
   MPI_Recv          : 3
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1882
+  MPI_Iprobe        : 1959
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 94.052766 s
+  Tiempo buscador   : 78.155814 s
 --- Buscador 8 ---
-  Intentos totales  : 19581514
+  Intentos totales  : 20840000
   Aciertos de pista : 1
   MPI_Send          : 2
   MPI_Recv          : 2
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 1869
+  MPI_Iprobe        : 2085
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 94.054871 s
+  Tiempo buscador   : 78.163807 s
 
 --- TOTALES ---
-  Intentos totales (todos buscadores) : 155526120
+  Intentos totales (todos buscadores) : 161109843
   Aciertos de pista (todos)           : 20
   MPI_Send buscadores                 : 28
   MPI_Recv buscadores                 : 27
@@ -109,6 +109,6 @@ Tiempo total (proceso 0): 94.063724 s
   MPI_Recv proceso 0                  : 28
   MPI_Probe proceso 0                 : 28
   MPI_Bcast proceso 0                 : 3
-  Tiempo total (proceso 0)            : 94.063724 s
+  Tiempo total (proceso 0)            : 78.176030 s
 ===========================================
 

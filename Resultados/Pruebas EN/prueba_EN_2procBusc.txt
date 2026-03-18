@@ -9,7 +9,7 @@ Buscadores activos: 2
 >>> Clave encontrada por proceso 1: GTYHUY <<<
 
 ========== ESTADISTICAS GLOBALES ==========
-Tiempo total (proceso 0): 241.275455 s
+Tiempo total (proceso 0): 197.350411 s
 
 --- Buscador 1 ---
   Intentos totales  : 103872728
@@ -19,30 +19,30 @@ Tiempo total (proceso 0): 241.275455 s
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 122996540
+  MPI_Iprobe        : 8352
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 241.275431 s
+  Tiempo buscador   : 197.350338 s
 --- Buscador 2 ---
-  Intentos totales  : 103298531
-  Aciertos de pista : 20189621
-  MPI_Send          : 20189622
-  MPI_Recv          : 20189622
+  Intentos totales  : 103780115
+  Aciertos de pista : 20283720
+  MPI_Send          : 20283721
+  MPI_Recv          : 20283721
   MPI_Isend         : 0
   MPI_Irecv         : 0
   MPI_Probe         : 0
-  MPI_Iprobe        : 125044656
+  MPI_Iprobe        : 8356
   MPI_Bcast (recib.): 3
-  Tiempo buscador   : 241.275540 s
+  Tiempo buscador   : 197.350387 s
 
 --- TOTALES ---
-  Intentos totales (todos buscadores) : 207171259
-  Aciertos de pista (todos)           : 40489088
-  MPI_Send buscadores                 : 40489090
-  MPI_Recv buscadores                 : 40489089
-  MPI_Send proceso 0                  : 40489089
-  MPI_Recv proceso 0                  : 40489090
-  MPI_Probe proceso 0                 : 40489090
+  Intentos totales (todos buscadores) : 207652843
+  Aciertos de pista (todos)           : 40583187
+  MPI_Send buscadores                 : 40583189
+  MPI_Recv buscadores                 : 40583188
+  MPI_Send proceso 0                  : 40583188
+  MPI_Recv proceso 0                  : 40583189
+  MPI_Probe proceso 0                 : 40583189
   MPI_Bcast proceso 0                 : 3
-  Tiempo total (proceso 0)            : 241.275455 s
+  Tiempo total (proceso 0)            : 197.350411 s
 ===========================================
 
