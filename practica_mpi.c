@@ -34,8 +34,7 @@
 #define MAX_PISTA        64
 #define MAX_NOMBRE       MPI_MAX_PROCESSOR_NAME
 
-/* Cada cuantos intentos se comprueba TAG_PARAR.
-*/
+/* Cada cuantos intentos se comprueba TAG_PARAR (solo rama sin pista) */
 #define CHECK_CADA_N_INTENTOS  10000
 
 /* =========================================================
@@ -384,7 +383,8 @@ void proceso_buscador(int id, int num_procs)
     char clave[MAX_PISTA];
     clave[tam_clave] = '\0';
 
-    int        terminado = 0;
+    int        terminado    = 0;
+    int        clave_ok     = 0;
     MPI_Status status;
 
     while (!terminado) {
@@ -405,24 +405,34 @@ void proceso_buscador(int id, int num_procs)
             est.n_send++;
 
             /*
-             * Espera bloqueante de TAG_RESPUESTA_CLAVE.
+             * Inner-loop: esperar UNICAMENTE TAG_RESPUESTA_CLAVE.
              * Proceso 0 siempre responde a cada consulta, bien con
              * RESP_CLAVE_OK, RESP_CLAVE_MAL o RESP_PARAR.
              * Esto garantiza que no quede ninguna consulta sin respuesta.
-             *
-             * Se usa MPI_Recv bloqueante en vez de un bucle con MPI_Iprobe
-             * porque el buscador no tiene nada mas que hacer mientras
-             * espera la respuesta, y asi se evita busy-waiting innecesario.
              */
-            int respuesta;
-            MPI_Recv(&respuesta, 1, MPI_INT, 0,
-                     TAG_RESPUESTA_CLAVE, MPI_COMM_WORLD, &status);
-            est.n_recv++;
+            int recibido = 0;
+            while (!recibido) {
+                int flag;
+                MPI_Iprobe(0, TAG_RESPUESTA_CLAVE,
+                           MPI_COMM_WORLD, &flag, &status);
+                est.n_iprobe++;
+                if (flag) {
+                    int respuesta;
+                    MPI_Recv(&respuesta, 1, MPI_INT, 0,
+                             TAG_RESPUESTA_CLAVE,
+                             MPI_COMM_WORLD, &status);
+                    est.n_recv++;
+                    recibido = 1;
 
-            if (respuesta == RESP_CLAVE_OK || respuesta == RESP_PARAR) {
-                terminado = 1;
+                    if (respuesta == RESP_CLAVE_OK) {
+                        terminado = 1;
+                        clave_ok  = 1;
+                    } else if (respuesta == RESP_PARAR) {
+                        terminado = 1;
+                    }
+                    /* RESP_CLAVE_MAL: sigue buscando */
+                }
             }
-            /* RESP_CLAVE_MAL: sigue buscando */
 
         } else {
 
