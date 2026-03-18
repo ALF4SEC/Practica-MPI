@@ -1,0 +1,125 @@
+
+=== PROCESO 0 (E/S) en MacBook-Pro-de-Hugo-2.local ===
+Mensaje original  : HABIENDO LLEGADO AL FINAL DE MI VIDA DE POBRE PECADOR, CON EL PELO YA CANOSO, ME DISPONGO A DEJAR CONSTANCIA SOBRE ESTE PERGAMINO DE LOS HECHOS ASOMBROSOS Y TERRIBLES QUE ME FUE DADO PRESENCIAR EN MI JUVENTUD, HACIA FINALES DEL ANHO DEL SENHOR DE 1327. QUE DIOS ME CONCEDA SABIDURIA Y GRACIA PARA SER FIEL NARRADOR DE LOS SUCESOS QUE TUVIERON LUGAR EN UNA REMOTA ABADIA EN EL RECONDITO NORTE DE ITALIA. UNA ABADIA CUYO NOMBRE PARECE AHORA MAS PIADOSO Y PRUDENTE OMITIR.
+Clave de cifrado  : GTYHUY
+Pista de busqueda : EN
+Tamano mensaje    : 469 bytes
+Buscadores activos: 9
+
+>>> Clave encontrada por proceso 3: GTYHUY <<<
+
+========== ESTADISTICAS GLOBALES ==========
+Tiempo total (proceso 0): 26.649437 s
+
+--- Buscador 1 ---
+  Intentos totales  : 19935414
+  Aciertos de pista : 3897811
+  MPI_Send          : 3897812
+  MPI_Recv          : 3897812
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 74909304
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 26.649555 s
+--- Buscador 2 ---
+  Intentos totales  : 19945260
+  Aciertos de pista : 3899311
+  MPI_Send          : 3899312
+  MPI_Recv          : 3899312
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 74269072
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 26.649421 s
+--- Buscador 3 ---
+  Intentos totales  : 19939843
+  Aciertos de pista : 3895575
+  MPI_Send          : 3895576
+  MPI_Recv          : 3895575
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 76314000
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 26.648302 s
+--- Buscador 4 ---
+  Intentos totales  : 19772650
+  Aciertos de pista : 3861020
+  MPI_Send          : 3861021
+  MPI_Recv          : 3861021
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 75744878
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 26.649421 s
+--- Buscador 5 ---
+  Intentos totales  : 19954901
+  Aciertos de pista : 3897420
+  MPI_Send          : 3897421
+  MPI_Recv          : 3897421
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 73796539
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 26.649516 s
+--- Buscador 6 ---
+  Intentos totales  : 19680524
+  Aciertos de pista : 3844399
+  MPI_Send          : 3844400
+  MPI_Recv          : 3844400
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 74827196
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 26.649544 s
+--- Buscador 7 ---
+  Intentos totales  : 19865537
+  Aciertos de pista : 3883921
+  MPI_Send          : 3883922
+  MPI_Recv          : 3883922
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 74578717
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 26.649571 s
+--- Buscador 8 ---
+  Intentos totales  : 19838820
+  Aciertos de pista : 3874177
+  MPI_Send          : 3874178
+  MPI_Recv          : 3874178
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 74536443
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 26.649420 s
+--- Buscador 9 ---
+  Intentos totales  : 19922244
+  Aciertos de pista : 3894594
+  MPI_Send          : 3894595
+  MPI_Recv          : 3894595
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 75398030
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 26.649425 s
+
+--- TOTALES ---
+  Intentos totales (todos buscadores) : 178855193
+  Aciertos de pista (todos)           : 34948228
+  MPI_Send buscadores                 : 34948237
+  MPI_Recv buscadores                 : 34948236
+  MPI_Send proceso 0                  : 34948236
+  MPI_Recv proceso 0                  : 34948237
+  MPI_Probe proceso 0                 : 34948237
+  MPI_Bcast proceso 0                 : 3
+  Tiempo total (proceso 0)            : 26.649437 s
+===========================================
+

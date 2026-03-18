@@ -28,9 +28,6 @@
 
 #define CLAVE_CIFRADO    "GTYHUY"
 
-/* Cambiar para distintas pruebas: "EN", "ABADIA",  "PERGAMINO" */
-#define PISTA_BUSQUEDA   "PERGAMINO"
-
 #define LEN_CLAVE        6
 
 #define MAX_MSG          2048
@@ -160,7 +157,7 @@ void crear_tipo_estadisticas(MPI_Datatype *tipo)
 /* =========================================================
  *  PROCESO 0 - E/S
  * ========================================================= */
-void proceso_ES(int num_procs)
+void proceso_ES(int num_procs, const char *pista)
 {
     int  num_buscadores = num_procs - 1;
     char nombre_proc[MAX_NOMBRE];
@@ -169,7 +166,6 @@ void proceso_ES(int num_procs)
 
     const char *mensaje_orig = MENSAJE_ORIGINAL;
     const char *clave_real   = CLAVE_CIFRADO;
-    const char *pista        = PISTA_BUSQUEDA;
 
     int tam_msg   = (int)strlen(mensaje_orig);
     int tam_pista = (int)strlen(pista);
@@ -496,6 +492,27 @@ int main(int argc, char **argv)
     MPI_Comm_rank(MPI_COMM_WORLD, &id);
     MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
 
+    if (argc != 2) {
+        if (id == 0) {
+            fprintf(stderr, "Uso: mpirun -np <num_procs> %s "
+                "<pista_busqueda>\n", argv[0]);
+        }
+        MPI_Finalize();
+        return 1;
+    } else {
+        if (strcmp(argv[1], "EN") != 0
+            && strcmp(argv[1], "ABADIA") != 0
+            && strcmp(argv[1], "PERGAMINO") != 0) {
+
+            if (id == 0) {
+                fprintf(stderr, "ERROR: La pista de busqueda debe ser "
+                    "'EN', 'ABADIA' o 'PERGAMINO'.\n");
+            }
+            MPI_Finalize();
+            return 1;
+        }
+    }
+
     if (num_procs < 2) {
         if (id == 0) {
             fprintf(stderr,
@@ -507,7 +524,7 @@ int main(int argc, char **argv)
     }
 
     if (id == 0) {
-        proceso_ES(num_procs);
+        proceso_ES(num_procs, argv[1]);
     } else {
         proceso_buscador(id, num_procs);
     }
