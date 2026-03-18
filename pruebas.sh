@@ -78,16 +78,16 @@ echo ""
 i=1
 while [ $i -le $NUM_CPUS ]; do
     echo "Ejecutando EN con $i buscadores"
-    mpirun -np $((i+1)) practica_mpi EN >> Resultados/${MAQUINA}/EN/$((i))ProcBusc.txt
+    mpirun -np $((i+1)) practica_mpi EN >> Resultados/${MAQUINA}/En/$((i))ProcBusc.txt
     i=$((i*2))
 done
 if [ $i -ne $NUM_CPUS ]; then
     echo "Ejecutando EN con $NUM_CPUS buscadores"
-    mpirun -np $NUM_CPUS practica_mpi EN >> Resultados/${MAQUINA}/EN/$((NUM_CPUS))ProcBusc.txt
+    mpirun -np $NUM_CPUS practica_mpi EN >> Resultados/${MAQUINA}/En/$((NUM_CPUS))ProcBusc.txt
 fi
 while [ $i -le 64 ]; do
     echo "Ejecutando EN con $i buscadores"
-    mpirun --oversubscribe -np $((i+1)) practica_mpi EN >> Resultados/${MAQUINA}/EN/$((i))ProcBusc.txt
+    mpirun --oversubscribe -np $((i+1)) practica_mpi EN >> Resultados/${MAQUINA}/En/$((i))ProcBusc.txt
     i=$((i*2))
 done
 
