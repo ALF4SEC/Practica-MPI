@@ -1,0 +1,202 @@
+
+=== PROCESO 0 (E/S) en vbox ===
+Mensaje original  : HABIENDO LLEGADO AL FINAL DE MI VIDA DE POBRE PECADOR, CON EL PELO YA CANOSO, ME DISPONGO A DEJAR CONSTANCIA SOBRE ESTE PERGAMINO DE LOS HECHOS ASOMBROSOS Y TERRIBLES QUE ME FUE DADO PRESENCIAR EN MI JUVENTUD, HACIA FINALES DEL ANHO DEL SENHOR DE 1327. QUE DIOS ME CONCEDA SABIDURIA Y GRACIA PARA SER FIEL NARRADOR DE LOS SUCESOS QUE TUVIERON LUGAR EN UNA REMOTA ABADIA EN EL RECONDITO NORTE DE ITALIA. UNA ABADIA CUYO NOMBRE PARECE AHORA MAS PIADOSO Y PRUDENTE OMITIR.
+Clave de cifrado  : GTYHUY
+Pista de busqueda : PERGAMINO
+Tamano mensaje    : 469 bytes
+Buscadores activos: 16
+
+>>> Clave encontrada por proceso 3: GTYHUY <<<
+
+========== ESTADISTICAS GLOBALES ==========
+Tiempo total (proceso 0): 85.920033 s
+
+--- Buscador 1 ---
+  Intentos totales  : 18930000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1894
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.910390 s
+--- Buscador 2 ---
+  Intentos totales  : 21310000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2132
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.898220 s
+--- Buscador 3 ---
+  Intentos totales  : 19939843
+  Aciertos de pista : 1
+  MPI_Send          : 2
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1997
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.868770 s
+--- Buscador 4 ---
+  Intentos totales  : 17100000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1711
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.911700 s
+--- Buscador 5 ---
+  Intentos totales  : 16910000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1692
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.910865 s
+--- Buscador 6 ---
+  Intentos totales  : 21450000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2146
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.912077 s
+--- Buscador 7 ---
+  Intentos totales  : 15990000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1600
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.919052 s
+--- Buscador 8 ---
+  Intentos totales  : 16960000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1697
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.897924 s
+--- Buscador 9 ---
+  Intentos totales  : 17330000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1734
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.919995 s
+--- Buscador 10 ---
+  Intentos totales  : 20080000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 2009
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.919526 s
+--- Buscador 11 ---
+  Intentos totales  : 16360000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1637
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.910788 s
+--- Buscador 12 ---
+  Intentos totales  : 17440000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1745
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.898316 s
+--- Buscador 13 ---
+  Intentos totales  : 17600000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1761
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.912200 s
+--- Buscador 14 ---
+  Intentos totales  : 18870000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1888
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.919513 s
+--- Buscador 15 ---
+  Intentos totales  : 18180000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1819
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.919293 s
+--- Buscador 16 ---
+  Intentos totales  : 18190000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 1820
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 85.918661 s
+
+--- TOTALES ---
+  Intentos totales (todos buscadores) : 292639843
+  Aciertos de pista (todos)           : 1
+  MPI_Send buscadores                 : 17
+  MPI_Recv buscadores                 : 16
+  MPI_Send proceso 0                  : 16
+  MPI_Recv proceso 0                  : 17
+  MPI_Probe proceso 0                 : 17
+  MPI_Bcast proceso 0                 : 3
+  Tiempo total (proceso 0)            : 85.920033 s
+===========================================
+
