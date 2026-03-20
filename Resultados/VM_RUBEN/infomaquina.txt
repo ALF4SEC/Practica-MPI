@@ -1,0 +1,4 @@
+Model Name: Virtual Machine (KVM)
+Chip: Intel(R) Core(TM) i5-14400F
+Total Number of Cores: 4
+Memory: 7.6 GB

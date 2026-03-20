@@ -1,0 +1,48 @@
+
+=== PROCESO 0 (E/S) en PC-Dalago ===
+Mensaje original  : HABIENDO LLEGADO AL FINAL DE MI VIDA DE POBRE PECADOR, CON EL PELO YA CANOSO, ME DISPONGO A DEJAR CONSTANCIA SOBRE ESTE PERGAMINO DE LOS HECHOS ASOMBROSOS Y TERRIBLES QUE ME FUE DADO PRESENCIAR EN MI JUVENTUD, HACIA FINALES DEL ANHO DEL SENHOR DE 1327. QUE DIOS ME CONCEDA SABIDURIA Y GRACIA PARA SER FIEL NARRADOR DE LOS SUCESOS QUE TUVIERON LUGAR EN UNA REMOTA ABADIA EN EL RECONDITO NORTE DE ITALIA. UNA ABADIA CUYO NOMBRE PARECE AHORA MAS PIADOSO Y PRUDENTE OMITIR.
+Clave de cifrado  : GTYHUY
+Pista de busqueda : PERGAMINO
+Tamano mensaje    : 469 bytes
+Buscadores activos: 2
+
+>>> Clave encontrada por proceso 1: GTYHUY <<<
+
+========== ESTADISTICAS GLOBALES ==========
+Tiempo total (proceso 0): 134.500266 s
+
+--- Buscador 1 ---
+  Intentos totales  : 103872728
+  Aciertos de pista : 1
+  MPI_Send          : 2
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 10898
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 134.481285 s
+--- Buscador 2 ---
+  Intentos totales  : 103910000
+  Aciertos de pista : 0
+  MPI_Send          : 1
+  MPI_Recv          : 1
+  MPI_Isend         : 0
+  MPI_Irecv         : 0
+  MPI_Probe         : 0
+  MPI_Iprobe        : 10392
+  MPI_Bcast (recib.): 3
+  Tiempo buscador   : 134.500251 s
+
+--- TOTALES ---
+  Intentos totales (todos buscadores) : 207782728
+  Aciertos de pista (todos)           : 1
+  MPI_Send buscadores                 : 3
+  MPI_Recv buscadores                 : 2
+  MPI_Send proceso 0                  : 2
+  MPI_Recv proceso 0                  : 3
+  MPI_Probe proceso 0                 : 3
+  MPI_Bcast proceso 0                 : 3
+  Tiempo total (proceso 0)            : 134.500266 s
+===========================================
+
